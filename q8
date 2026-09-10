@@ -1,0 +1,56 @@
+KESHAVMEMORIALINSTITUTEOFTECHNOLOGY
+(ANAUTONOMOUSINSTITUTION)
+AccreditedbyNBA&NAAC,ApprovedbyAICTE,AffiliatedtoJNTUH,
+Narayanguda Hyderabad–500029
+A.Y 2026-2027
+Department of Computer Science & Engineering
+Lab Internal I
+Subject Name: Software Engineering                                      Subject Code: 23CC501PC
+Year and Semester:   III / I                                                       Branch/Section: CSE - B
+Faculty: M Nikitha                                                                     Lab:   
+
+Vehicle Rental Management System
+ProblemStatement:
+A vehicle rental company wants to develop a web-based Vehicle Rental Management System to provide customers with convenient access to vehicle rental information. The system should allow users to view available vehicles along with important details such as vehicle name, vehicle type, rental price, and availability status. The application should provide separate web pages for accessing the home page, user login, user registration, and vehicle information. The system should be designed with a user-friendly interface so that customers can easily navigate through the application and identify suitable vehicles for rental. The application should be developed as a Maven-based web project, maintained using Git and GitHub for version control, and deployed locally using Docker for consistent and reliable execution.
+Repository:https://github.com/nikithamoturi/VehicleRentalManagementSystem.git
+
+PART I – MAVEN WEB PROJECT DEVELOPMENT — 40 MARKS
+Q1. Maven Project Setup and Build — 20 Marks
+Perform the following:
+a) Clone the given Maven project repository and import it into Eclipse as a Maven Web Project. Identify and verify the main JSP pages available in the project. [4]
+b) Open pom.xml and identify the groupId, artifactId, version, and packaging of the project. Also identify any two dependencies and state their purpose. [4]
+c) Execute the Maven clean and build commands. If a dependency, compiler, or configuration error occurs, identify the cause and make the necessary correction in pom.xml. [7]
+d) Verify the generated build output and execute the web application on the local server. Access the available JSP pages through the browser and verify that they load successfully. [5]
+
+Q2. Maven Dependency and Build Troubleshooting — 20 Marks
+a) Use Maven to display the project's dependency tree and identify the dependencies used by the application. [4]
+b) Explain how Maven resolves dependencies and how a dependency version conflict can affect the project build. [4]
+c) Locate the downloaded Maven dependencies in the local .m2 repository and verify that the required JAR files are available. [4]
+d) Demonstrate suitable Maven commands to clean, compile, package, and troubleshoot the project when a build failure occurs. [4]
+e) If the Maven build is successful but the JSP application does not open correctly on the server, identify whether the problem is related to the Maven build, server configuration, or web application and explain how you would troubleshoot it. [4]
+
+PART II – GIT & GITHUB INTEGRATION — 40 MARKS
+Q3. Git Repository and Vehicle Page Modification — 20 Marks
+a) Clone the Vehicle Rental project repository and use git status and git remote -v to verify the working tree and remote repository. [4]
+b) Create a suitable feature branch for updating the vehicle information page and verify that the branch has been created and checked out successfully. [4]
+c) Modify the vehicle.jsp page to display an additional Vehicle Type and Availability Status along with the existing vehicle details. Use git diff to verify the changes. [6]
+d) Stage the modified file, commit the changes with a meaningful commit message, and verify the commit. [6]
+
+Q4. Git Synchronization and Remote Repository — 20 Marks
+a) Make a small additional modification to vehicle.jsp, such as improving the display format or adding a Rental Rate field, and verify the modification using git diff. [4]
+b) Retrieve the latest changes from the remote GitHub repository without overwriting the local commits. Demonstrate the appropriate Git command(s). [4]
+c) Compare the feature branch with the main branch and identify the differences using suitable Git commands. [4]
+d) Merge the completed vehicle-page changes into the main branch, push the changes to GitHub, and verify that the updated vehicle.jsp is available in the remote repository. [8]
+
+PART III – DOCKERIZATION AND CONTAINER MANAGEMENT — 20 MARKS
+Q5. Dockerfile and Application Containerization — 12 Marks
+a) Create a suitable Dockerfile for the Vehicle Rental Maven Web Application and identify an appropriate Java/Tomcat base image. [3]
+b) Build the Maven Web Application and deploy the generated WAR file into the Tomcat webapps directory inside the Docker image. [4]
+c) Configure the Dockerfile to expose the appropriate Tomcat port and start the Tomcat server when the container is launched. [2]
+d) Build the Docker image with the name vehiclerentalapp, assign a suitable tag, and verify that the image has been created successfully. [3]
+Q6. Run, Verify and Push Docker Image — 8 Marks
+a) Create and run a container from the vehiclerentalapp image by mapping host port 8080 to the appropriate container port. [3]
+b) Verify the running container and access the Vehicle Rental application through the browser using localhost:8080. [2]
+c) Tag the image using your Docker Hub username, log in to Docker Hub, and push the image to the remote repository. [2]
+d) Verify that the VehicleRentalApp image is available in the Docker Hub repository. [1]
+
